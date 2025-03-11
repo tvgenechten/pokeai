@@ -64,7 +64,7 @@ elif input_option == "🎥 Live Webcam":
 
     if webcam_image is not None:
         image = Image.open(webcam_image).convert("RGB")
-        st.image(image, caption="📷 Opgenomen afbeelding", use_column_width=True)
+        st.image(image, caption="📷 Opgenomen afbeelding", use_container_width=True)
 
         # Voorspelling tonen
         class_name, confidence_score = predict_image(image)
