@@ -49,7 +49,7 @@ if input_option == "📂 Upload Afbeelding":
 
     if uploaded_file is not None:
         image = Image.open(uploaded_file).convert("RGB")
-        st.image(image, caption="📷 Geüploade afbeelding", use_column_width=True)
+        st.image(image, caption="📷 Geüploade afbeelding", use_container_width=True)
 
         # Voorspelling tonen
         class_name, confidence_score = predict_image(image)
