@@ -11,7 +11,7 @@ st.title("🎥 Live & Upload Afbeeldingsclassificatie met Keras")
 # Laad model en labels
 @st.cache_resource
 def load_keras_model():
-    return load_model("keras_Model.h5", compile=False)
+    return load_model("keras_model.h5", compile=False)
 
 @st.cache_resource
 def load_labels():
