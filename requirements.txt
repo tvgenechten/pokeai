@@ -1,5 +1,5 @@
 ﻿opencv-python-headless
-tensorflow
+tensorflow==3.12.1
 opencv-python-headless
 numpy
 Pillow
